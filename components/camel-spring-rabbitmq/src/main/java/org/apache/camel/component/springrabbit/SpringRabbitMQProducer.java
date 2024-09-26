@@ -51,7 +51,7 @@ public class SpringRabbitMQProducer extends DefaultAsyncProducer {
     }
 
     public RabbitTemplate getInOnlyTemplate() {
-        if (inOutTemplate == null) {
+        if (inOnlyTemplate == null) {
             inOnlyTemplate = getEndpoint().createInOnlyTemplate();
         }
         return inOnlyTemplate;
